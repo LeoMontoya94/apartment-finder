@@ -62,22 +62,9 @@ class ZillowDataScraper:
             submit_button = self.driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div/div/span/span')
             submit_button.click()
             sleep(1)
-    #
-    # def create_excel_sheet(self):
-    #     self.driver.get(FORM_CONTROL)
-    #     sleep(1)
-    #     edit_access = self.driver.find_element_by_xpath('/html/body/div/div[1]/div/span/span[2]/div')
-    #     edit_access.click()
-    #     sleep(1)
-    #     email_entry = self.driver.find_element_by_xpath('//*[@id="identifierId"]')
-    #     email_entry.send_keys(EMAIL)
-    #     next_button = self.driver.find_element_by_xpath('//*[@id="identifierNext"]/div/button/div[2]')
-    #     next_button.click()
-    #     # excel_button = self.driver.find_element_by_xpath('//*[@id="ResponsesView"]/div/div[1]/div[1]/div[2]/div[1]/div/div')
-    #     # excel_button.click()
 
 
 bot = ZillowDataScraper()
 bot.get_info_lists()
 bot.fill_out_form()
-# bot.create_excel_sheet()
+
